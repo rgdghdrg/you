@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
+  <g fill="none" stroke="#c9a96b" stroke-opacity="0.10" stroke-width="1.2">
+    <g transform="translate(260 280) rotate(-20)">
+      <ellipse rx="40" ry="26"/>
+      <ellipse rx="85" ry="58"/>
+      <ellipse rx="135" ry="92"/>
+      <ellipse rx="190" ry="130"/>
+      <ellipse rx="250" ry="172"/>
+      <ellipse rx="315" ry="218"/>
+    </g>
+    <g transform="translate(760 720) rotate(25)">
+      <ellipse rx="34" ry="30"/>
+      <ellipse rx="80" ry="64"/>
+      <ellipse rx="130" ry="102"/>
+      <ellipse rx="185" ry="144"/>
+      <ellipse rx="245" ry="190"/>
+      <ellipse rx="310" ry="236"/>
+    </g>
+    <path d="M0 560 C170 505 290 635 470 580 S800 470 1000 545"/>
+    <path d="M0 600 C170 545 290 675 470 620 S800 510 1000 585"/>
+    <path d="M0 640 C170 585 290 715 470 660 S800 550 1000 625"/>
+  </g>
+</svg>

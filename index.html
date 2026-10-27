@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c1210">
+  <!-- ✏️ Заголовок вкладки и описание для поисковиков -->
+  <title>Твоё Имя — ориентирование и бег</title>
+  <meta name="description" content="Личная страница спортсмена: ориентирование и бег. Обо мне, достижения, фото и ссылки.">
+
+  <!-- Шрифты (нужен интернет; без него сайт покажет запасные шрифты) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== ШАПКА / СТАРТ ===================== -->
+  <header class="hero">
+    <div class="hero__inner">
+      <!-- ✏️ Твоё фото: положи файл в папку images и поменяй имя ниже -->
+      <div class="avatar">
+        <img src="images/avatar.jpg" alt="Фото"
+             onerror="this.onerror=null; this.src='images/placeholder.svg'">
+      </div>
+      <p class="hero__label">Старт</p>
+      <!-- ✏️ Имя и подпись -->
+      <h1>Твоё Имя</h1>
+      <p class="hero__subtitle">Ориентирование · Бег · город · клуб</p>
+      <nav class="nav">
+        <a href="#about">Обо мне</a>
+        <a href="#achievements">Достижения</a>
+        <a href="#records">Рекорды</a>
+        <a href="#gallery">Фото</a>
+        <a href="#links">Ссылки</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== КП 1: ОБО МНЕ ===================== -->
+    <section id="about" class="section">
+      <h2><span class="cp">1</span> Обо мне</h2>
+      <div class="card">
+        <!-- ✏️ Расскажи о себе своими словами -->
+        <p>
+          Привет! Я занимаюсь спортивным ориентированием. Бегаю по лесам, паркам и городам,
+          выбираю оптимальный вариант пути между контрольными пунктами и люблю, когда карта
+          и местность сходятся до метра.
+        </p>
+        <p>
+          Ориентирование — мой главный вид спорта, а бег — вторая большая часть моих тренировок:
+          он делает меня быстрее на дистанции и помогает на стартах по карте.
+        </p>
+        <p>
+          Здесь можно коротко написать, с какого года занимаешься, в каком клубе тренируешься,
+          какие дисциплины любишь больше всего (спринт, middle, long) и на каких дистанциях бегаешь.
+        </p>
+        <!-- ✏️ Быстрые факты: можно добавлять/удалять строки <li> -->
+        <ul class="facts">
+          <li><b>Главный вид спорта</b> спортивное ориентирование</li>
+          <li><b>Также занимаюсь</b> бегом</li>
+          <li><b>Ориентирование с</b> 20XX года</li>
+          <li><b>Разряд</b> укажи свой</li>
+          <li><b>Клуб</b> название клуба</li>
+          <li><b>Любимая дисциплина</b> спринт / middle / long</li>
+          <li><b>Любимая дистанция в беге</b> 5 км / 10 км / полумарафон</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== КП 2: ДОСТИЖЕНИЯ ===================== -->
+    <section id="achievements" class="section">
+      <h2><span class="cp">2</span> Достижения</h2>
+      <div class="timeline">
+        <!-- ✏️ Одно достижение = один блок <article class="award">. Копируй и вставляй. -->
+        <article class="award">
+          <div class="award__year">2026</div>
+          <div class="award__body">
+            <h3>Название соревнований</h3>
+            <p>Ориентирование · 1 место · группа М20 · спринт</p>
+          </div>
+        </article>
+
+        <article class="award">
+          <div class="award__year">2025</div>
+          <div class="award__body">
+            <h3>Название соревнований</h3>
+            <p>Ориентирование · 2 место · группа М20 · middle</p>
+          </div>
+        </article>
+
+        <article class="award">
+          <div class="award__year">2025</div>
+          <div class="award__body">
+            <h3>Название забега</h3>
+            <p>Бег · 10 км · результат 00:00</p>
+          </div>
+        </article>
+
+        <article class="award">
+          <div class="award__year">2024</div>
+          <div class="award__body">
+            <h3>Название соревнований</h3>
+            <p>Выполнил(а) разряд</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== КП 3: РЕКОРДЫ В БЕГЕ ===================== -->
+    <section id="records" class="section">
+      <h2><span class="cp">3</span> Рекорды в беге</h2>
+      <div class="records">
+        <!-- ✏️ Одна дистанция = один блок <div class="record">.
+             Впиши свой лучший результат и (по желанию) дату и место.
+             Ненужные дистанции удали, нужные добавь копированием блока. -->
+        <div class="record">
+          <div class="record__dist">800 м</div>
+          <div class="record__time">0:00.0</div>
+          <div class="record__meta">дата · место</div>
+        </div>
+        <div class="record">
+          <div class="record__dist">1500 м</div>
+          <div class="record__time">0:00.0</div>
+          <div class="record__meta">дата · место</div>
+        </div>
+        <div class="record">
+          <div class="record__dist">3 км</div>
+          <div class="record__time">00:00</div>
+          <div class="record__meta">дата · место</div>
+        </div>
+        <div class="record">
+          <div class="record__dist">5 км</div>
+          <div class="record__time">00:00</div>
+          <div class="record__meta">дата · место</div>
+        </div>
+        <div class="record">
+          <div class="record__dist">10 км</div>
+          <div class="record__time">00:00</div>
+          <div class="record__meta">дата · место</div>
+        </div>
+        <div class="record">
+          <div class="record__dist">21,1 км</div>
+          <div class="record__time">0:00:00</div>
+          <div class="record__meta">дата · место</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== КП 4: ФОТО ===================== -->
+    <section id="gallery" class="section">
+      <h2><span class="cp">4</span> Фото</h2>
+      <div class="gallery">
+        <!-- ✏️ Положи фото в папку images под именами photo1.jpg, photo2.jpg ... или поменяй имена ниже.
+             Пока файла нет, показывается заглушка. -->
+        <figure>
+          <img src="images/photo1.jpg" alt="Подпись к фото 1"
+               onerror="this.onerror=null; this.src='images/placeholder.svg'">
+          <figcaption>Подпись к фото 1</figcaption>
+        </figure>
+        <figure>
+          <img src="images/photo2.jpg" alt="Подпись к фото 2"
+               onerror="this.onerror=null; this.src='images/placeholder.svg'">
+          <figcaption>Подпись к фото 2</figcaption>
+        </figure>
+        <figure>
+          <img src="images/photo3.jpg" alt="Подпись к фото 3"
+               onerror="this.onerror=null; this.src='images/placeholder.svg'">
+          <figcaption>Подпись к фото 3</figcaption>
+        </figure>
+        <figure>
+          <img src="images/photo4.jpg" alt="Подпись к фото 4"
+               onerror="this.onerror=null; this.src='images/placeholder.svg'">
+          <figcaption>Подпись к фото 4</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== ФИНИШ: ССЫЛКИ ===================== -->
+    <section id="links" class="section">
+      <h2><span class="cp cp--finish"></span> Финиш · Ссылки</h2>
+      <div class="links">
+        <!-- ✏️ Ссылки. Чтобы добавить новую, скопируй любую строку <a class="btn" ...>...</a>
+             ниже, вставь рядом и поменяй две вещи: адрес в href и название кнопки между тегами.
+             Лишние кнопки просто удали. Кнопки сами переносятся на новую строку.
+             Шаблон для копирования:
+             <a class="btn" href="https://АДРЕС" target="_blank" rel="noopener">Название</a> -->
+        <a class="btn" href="https://orgeo.ru" target="_blank" rel="noopener">Orgeo</a>
+        <a class="btn" href="https://vk.com/" target="_blank" rel="noopener">ВКонтакте</a>
+        <a class="btn" href="https://t.me/" target="_blank" rel="noopener">Telegram</a>
+        <a class="btn" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="mailto:you@example.com">Почта</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <!-- ✏️ Подпись внизу -->
+    <p>© 2026 Твоё Имя</p>
+  </footer>
+
+</body>
+</html>

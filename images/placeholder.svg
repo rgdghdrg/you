@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480">
+  <rect width="640" height="480" fill="#16211c"/>
+  <g fill="none" stroke="#c9a96b" stroke-opacity="0.22" stroke-width="1.5">
+    <ellipse cx="320" cy="240" rx="60" ry="40"/>
+    <ellipse cx="320" cy="240" rx="120" ry="82"/>
+    <ellipse cx="320" cy="240" rx="190" ry="130"/>
+    <ellipse cx="320" cy="240" rx="270" ry="185"/>
+  </g>
+  <circle cx="320" cy="240" r="46" fill="none" stroke="#c9a96b" stroke-width="2"/>
+  <circle cx="320" cy="240" r="3" fill="#c9a96b"/>
+  <text x="320" y="410" text-anchor="middle" font-family="Georgia, serif" font-size="22" letter-spacing="2" fill="#97a39b">Здесь будет твоё фото</text>
+</svg>
